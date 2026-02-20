@@ -1,0 +1,56 @@
+20 Feb 2026
+
+Problem 1 (CMO 2013 P1)
+
+Determine all polynomials P(x) with real coefficients such that
+
+(x+1)P(x-1)-(x-1)P(x) is constant
+
+
+----------------------------------------
+(TeX Solution)
+-----------
+Storage
+Pogres
+Sol set P(x)=c
+dam bro
+
+Let k be the constant such that
+(x+1)P(x-1)-(x-1)P(x)=k
+
+When x=1, P(0)=k/2
+When x=0, P(-1)=k/2
+Let Q(x) = P(x)-k/2 which has roots 0 and -1
+Q(x) = R(x)x(x+1)
+(x+1)(R(x-1)(x-1)x+k/2)-(x-1)(R(x)x(x+1)+k/2)=k
+(x+1)R(x-1)(x-1)x-(x-1)R(x)x(x+1)=0
+x(x-1)(x+1)(R(x-1)-R(x))=0
+so R(x-1)=R(x)
+Denote a polynomial S(x)=R(x)-R(0), S(x) has infinite roots, so it is the 0 polynomial.
+Therefore R(x) is constant for all x, let R(x)=c_1
+P(x)=c_1*x*(x+1)+k/2
+Substituting to the original question,
+(x+1)(c_1*x*(x-1)+k/2)-(x-1)(c_1*x*(x+1)+k/2)=k
+(x+1)x(x-1)c_1-(x-1)x(x+1)c_1=0 which works for all c_1,k.
+P(x) = c_1*x*(x+1)+c works where c_1,c is in R.
+------------------
+Writeup
+Claim that all polynomials in the form of P(x)=c_1*x*(x+1)+c works for any choice of reals c and c_1.
+Let k be the constant such that
+(x+1)P(x-1)-(x-1)P(x)=k, then realize that P(x)=c_1*x*(x+1)+k/2 is a solution.
+Substituting to the original question,
+(x+1)(c_1*x*(x-1)+k/2)-(x-1)(c_1*x*(x+1)+k/2)=k
+(x+1)x(x-1)c_1-(x-1)x(x+1)c_1=0 which works for all c_1,k.
+P(x) = c_1*x*(x+1)+c works where c_1,c is in R.
+
+When x=1, P(0)=k/2
+When x=0, P(-1)=k/2
+Let Q(x) = P(x)-k/2 which has roots 0 and -1
+Q(x) = R(x)x(x+1)
+(x+1)(R(x-1)(x-1)x+k/2)-(x-1)(R(x)x(x+1)+k/2)=k
+(x+1)R(x-1)(x-1)x-(x-1)R(x)x(x+1)=0
+x(x-1)(x+1)(R(x-1)-R(x))=0
+so R(x-1)=R(x)
+Denote a polynomial S(x)=R(x)-R(0), S(x) has infinite roots, so it is the 0 polynomial.
+Therefore R(x) is constant for all x, let R(x)=c_1
+P(x)=c_1*x*(x+1)+k/2
